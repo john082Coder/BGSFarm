@@ -1,4 +1,4 @@
-# GalaxyCoin Contracts 🍉
+# BGS FARM Contracts 🍉
 
-This repository contains the GalaxyCoin farm solidity contracts.
+This repository contains the BGSFARM farm solidity contracts.
 
