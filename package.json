@@ -1,30 +1,16 @@
 {
-  "name": "payrlink-core",
-  "version": "1.0.0",
-  "description": "PayrLink Core Smart Contracts",
-  "main": "truffle.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "kovan": "truffle migrate --network kovan --reset",
-    "verifykovan": "truffle run verify PAYR Crowdsale Presale Farm --network kovan",
-    "mainnet": "truffle migrate --network main --reset",
-    "verify": "truffle run verify PAYR --network main",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": "https://github.com/payrlinks/payrlinks-contracts",
-  "author": "admin@payrlink.com",
-  "license": "MIT",
-  "dependencies": {
-    "@openzeppelin/contracts": "^4.0.0",
-    "@truffle/hdwallet-provider": "^1.2.1",
-    "dotenv": "^5.0.1",
-    "fs": "0.0.1-security",
-    "ganache-cli": "^6.1.2",
-    "truffle": "^5.1.62"
-  },
+  "name": "hardhat-project",
   "devDependencies": {
-    "truffle-plugin-verify": "^0.5.4"
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "hardhat": "^2.9.6",
+    "web3": "^1.7.3"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
+    "@nomiclabs/hardhat-solhint": "^2.0.1",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/contracts": "^4.6.0",
+    "dotenv": "^16.0.1",
+    "solidity-coverage": "^0.7.21"
   }
 }

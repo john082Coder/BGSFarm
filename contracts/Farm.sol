@@ -81,7 +81,7 @@ contract Farm is Ownable {
 
     // Fund the farm, increase the end block
     function fund(uint256 _amount) external onlyOwner {
-        require(block.number < endBlock, "fund: too late, the farm is closed");
+      //  require(block.number < endBlock, "fund: too late, the farm is closed");
 
         erc20.transferFrom(address(msg.sender), address(this), _amount);
         endBlock += _amount.div(rewardPerBlock);
